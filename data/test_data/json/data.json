@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "account_type": "GENERAL_PURPOSE",
+      "account_description": "user has balance, has friends, has bank account, has unread notifications",
+      "username": "Tavares_Barrows",
+      "password": "s3cret"
+    },
+    {
+      "account_type": "FIRST_TIME_USER",
+      "account_description": "no has balance, no friends, no bank account, no unread notifications",
+      "username": "Katharina_Bernier",
+      "password": "s3cret"
+    }
+  ]
+}
