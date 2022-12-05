@@ -8,9 +8,9 @@ import java.io.FileInputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
-public class JSON {
+public abstract class JSON {
 
-    /** readJsonFile() - reads json data and returns the value */
+    /** readJsonFile() - reads json data and returns the value in JSON format */
     public static JsonNode readJsonFile(String src){
         FileInputStream fis;
         String jsonData;
@@ -23,7 +23,7 @@ public class JSON {
             objectMapper = new ObjectMapper();
             jsonNode = objectMapper.readTree(jsonData);
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            Print.errorMessage(e.getMessage());
         }
 
         return Objects.requireNonNull(jsonNode);

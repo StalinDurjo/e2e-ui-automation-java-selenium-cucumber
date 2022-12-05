@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/com/stalindurjo/uat/Feature",
         glue = {"com.stalindurjo.uat.StepDefinitions"},
-        tags = "not @ignore",
+        tags = "not @ignore and @only",
+//        dryRun = true,
         plugin = {"json:target/cucumber.json"}
 )
 public class TestRunner {}

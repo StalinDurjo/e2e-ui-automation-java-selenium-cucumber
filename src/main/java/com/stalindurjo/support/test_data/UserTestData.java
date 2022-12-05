@@ -16,6 +16,7 @@ public class UserTestData extends JSON {
         this.accountType = accountType;
     }
 
+    /** get() - Loops through array of json data from 'users' and returns value of individual array */
     public String get(String property){
         String data = null;
         String type = String.valueOf(accountType);

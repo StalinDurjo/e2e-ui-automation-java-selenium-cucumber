@@ -10,7 +10,6 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
-import org.openqa.selenium.WebElement;
 
 public class Login_Steps extends BaseTest {
     @Given("user is on the signin page")
@@ -86,5 +85,15 @@ public class Login_Steps extends BaseTest {
     public void error_message_is_displayed_in_signin_page() {
         String alertClassName = login.errorMessageElement.getAttribute("class");
         Assert.assertEquals("MuiAlert-message", alertClassName);
+    }
+
+    @Given("this is a test scenario")
+    public void this_is_a_test_scenario() {
+        driver.get(Configuration.baseUrl() + "/signin");
+    }
+
+    @When("this is the second step")
+    public void this_is_the_second_step() {
+        driver.get(Configuration.baseUrl() + "/signin");
     }
 }

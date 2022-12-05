@@ -83,6 +83,16 @@ public final class Configuration {
         return Boolean.parseBoolean(parallel);
     }
 
+    /** dryRun() - returns true or false */
+//    public static Boolean dryRun(){
+//        String dryRun = loadConfiguration().getProperty("dry_run");
+//
+//        if(dryRun == null)
+//            Print.errorMessage("Dry Run value is null");
+//
+//        return Boolean.parseBoolean(dryRun);
+//    }
+
     /** jsonTestDataDirectory() - returns the test_data json directory located in project root 'data/**' directory */
     public static String jsonTestDataDirectory(String filename){
         String testData = loadConfiguration().getProperty("test_data.json.dir");
