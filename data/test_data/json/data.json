@@ -8,7 +8,7 @@
     },
     {
       "account_type": "FIRST_TIME_USER",
-      "account_description": "no has balance, no friends, no bank account, no unread notifications",
+      "account_description": "has no balance, no friends, no bank account, no unread notifications",
       "username": "Katharina_Bernier",
       "password": "s3cret"
     }
